@@ -1,0 +1,48 @@
+html {
+	font-family : tahoma, sans-serif;
+	background : white;
+}
+
+body {
+	max-width : 1000px;
+	height : 500px;
+	margin : 10px auto;
+	background : #CCC;
+
+}
+
+#site-banner {
+	width : 90%;
+	background : black;
+	color : white;
+	padding : 1em 5%;
+}
+
+#site-logo {
+	background-image : url('../images/logo.png');
+	background-repeat : no-repeat;
+	height : 2em;
+	width : 2em;
+	background-size : contain;
+	float : left;
+	
+}
+
+#site-title {
+	font-size : x-large;
+	font-weight : bold;
+	color : white;
+	display : inline;
+}
+
+div.login {
+	width : 400px;
+	margin : 0px auto;
+}
+
+div.login input{
+	display : block;
+	width  : 98%;
+	margin-bottom : .5em;
+}
+
