@@ -1,7 +1,7 @@
 <?php 
 	require "templates/constants.php";
 	require "templates/sessions.php";
-
+	require "templates/";
 ?>
 <!DOCTYPE html>
 <html>
