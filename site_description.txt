@@ -1,0 +1,39 @@
+Database Tables
+====================
+{student table}
+id - student id
+name - student name
+username 
+password - sha1 hash 
+
+{teacher table}
+id - teacher id
+name - teacher name
+username
+password
+
+
+folders/submissions - contains submissions that correspond to a class/section
+  contains - subfolders thay corresponds to a topic/quiz/activity submissions
+
+  example: 
+  
+Teacher_Name
+ |_860 - subject stub code
+     |_ .config - contains subject schedule (to control submission time),  The subject Name, and submission key for each folder (MSWORD=KEY)
+     |_MS Word 
+         |_Studentid
+            |_Resume_draft.docx
+            |_Resume_final.docx
+
+     |_MS Excel
+     |_C
+
+
+* 
+ 
+
+
+
+
+     
