@@ -19,6 +19,7 @@
 		// create session
 		session_start();
 		$_SESSION["user"] = $uname;
+		$_SESSION["name"] = $res->fetch_assoc()["name"];
 		
 		echo('{"post":"login","res":"OK"}');
 	}
