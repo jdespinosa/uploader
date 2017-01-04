@@ -2,15 +2,14 @@
 	// check if user has logged in
 	
 	session_start();
-	if( basename($_SERVER['PHP_SELF']) == "login.php" ){
+	if( strpos(basename($_SERVER['PHP_SELF']), "login.php") != false  ){
 		echo "HERE";
-		dir();
 		if( isset($_SESSION["user"]) ){
 			// redirect to main page
 			header("Location:index.php");
 		}
 	} 
-    else if ( !isset($_SESSION["user"]) ) {
+    else if (  strpos(basename($_SERVER['PHP_SELF']), "login.php") != false && !isset($_SESSION["user"]) ) {
         header("Location:login.php");
     }
 ?>

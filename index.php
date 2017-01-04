@@ -1,7 +1,15 @@
 <?php 
 	require "templates/constants.php";
-	require "templates/sessions.php";
+	// require "templates/sessions.php";
 	// require "utilities/getUploads.php";
+	
+	// redirect to login page when no session is found
+	session_start();
+	if( !isset($_SESSION["user"]) ){
+		// redirect to main page
+		header("Location:login.php");
+	}
+
 ?>
 <!DOCTYPE html>
 <html>

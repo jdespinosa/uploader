@@ -1,6 +1,13 @@
 <?php 
 	require "templates/constants.php";
-	require "templates/sessions.php";
+	
+	// if user has logged in
+	session_start();
+	if( isset($_SESSION["user"]) ){
+		// redirect to main page
+		header("Location:index.php");
+	}
+	
 ?>
 <!DOCTYPE html>
 <html>

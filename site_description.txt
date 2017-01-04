@@ -1,33 +1,45 @@
-Database Tables
-====================
-{student table}
-id - student id
-name - student name
-username 
-password - sha1 hash 
-
-{teacher table}
-id - teacher id
-name - teacher name
+user table 
+==========
+id 
+name
 username
 password
+type   - 1 - teacher, 2 - student
+
+subject_roster table
+===============
+stubcode   
+participant   - student or teacher id (Teacher should be only one)  
+type          - 1 - teacher,  2 - student
 
 
-folders/submissions - contains submissions that correspond to a class/section
-  contains - subfolders thay corresponds to a topic/quiz/activity submissions
-
-  example: 
-  
-Teacher_Name
- |_860 - subject stub code
-     |_ .config - contains subject schedule (to control submission time),  The subject Name, and submission key for each folder (MSWORD=KEY)
-     |_MS Word 
-         |_Studentid
-            |_Resume_draft.docx
-            |_Resume_final.docx
-
-     |_MS Excel
-     |_C
+account_activation - student must activate account first before logging in 
+==================
+id 
+code
+name
+- can be filled up using csv file
 
 
-* 
+submission
+==================
+stubcode 
+subcode - submission code
+details - JSON list of file name formats with their respective description 
+title - submission title
+validity - either time frame (date and time)  or simply yes/no in JSON format
+
+
+
+upload directory structure
+==========================
+
+root
+ |_ Student1
+     |_Stubcode1
+       |_SubmissionCode
+          |_File1
+          |_File2
+
+
+     
