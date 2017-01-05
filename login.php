@@ -25,10 +25,15 @@
 			<div class="login form">
 				<h2>Login </h2>
 			
-				<input type="text" id="txtusername" />
-				<input type="password" id="txtpassword" />
+				<label>Username:</label><input type="text" id="txtusername" />
+				<label>Password:</label><input type="password" id="txtpassword" />
+				
+				<p id="err">iInvalid username</p>
+				<p class="popup-link">
+					<span class="popup-link-text">Forgot Password?</span>
+					<div class="popup-link-popup">Teacher can reset password</div>
+				</p>
 				<input type="button" id="btnlogin" value="Login"/>
-				<span id="err"></span>
 			</div>
 		</div>
 		
